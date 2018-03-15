@@ -30,6 +30,11 @@
       <ion-input type="text" [(ngModel)]="description"></ion-input>
     </ion-item>
 
+    <ion-item>
+      <ion-label floating>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="date"></ion-datetime>
+    </ion-item>
+
   </ion-list>
 
   <button full ion-button color="secondary" (click)="saveItem()">Save</button>
