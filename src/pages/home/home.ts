@@ -52,7 +52,13 @@ export class HomePage {
   }
 
   removeItem(item){
-
+    var i;
+    for(i=0; i< this.items.length; i++){
+      if(this.items[i] == item){
+        this.items.splice(i,1);
+      }
+    }
+    this.dataService.save(this.items);
   }
 
   viewItem(item){
